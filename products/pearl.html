@@ -1,122 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>          
+<head>     
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pearl (2022)</title>
+  <link rel="stylesheet" href="../style.css">     
 </head>
 
 <body>
-<header>
-  <h1><font color="red">🪓 Pearl (Walmart Exclusive Art Blu-Ray)</font></h1>
-  <nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About the Owner</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-  </nav>
-  <hr>
-
-<main>
-<table>
-        <tr>
-          <td valign="top">
-            <img src="../pearl.png" width="300" alt="An image of the Obsession 4k Ultra HD BluRay CD">
-          </td>
-          <td valign="top">
-<table>
-<tr>
-    <th>Product</th>
-    <th>Price</th>
-    <th>In stock</th>
-</tr>
-<tr>
-    <td>Pearl (Walmart Exclusive Art Blu-Ray)</td>
-    <td>₱970</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <th>Genre</th>
-    <th>Plot</th>
-    <th>Inclusions</th>
-</tr>
-<tr>
-    <td>Horror/Drama</td>
-    <td>Trapped on her family's isolated farm, a young woman's desperate desire for stardom turns into a violent, technicolor nightmare.</td>
-    <td>1080p Blu-ray CD</td>
-</tr>
-</table>
-          
-          <ul class="specs-list">
-          </td>
-        </tr>
-      </table>
-    </main>
+  <header>
+    <h1 class="movie-title">🪓 <font color="red">Pearl</font> (Walmart Exclusive Art Blu-Ray)</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About the Owner</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-<form action="#" method="post">
-  <div>
-    <label for="quantity">Quantity:</label>
-    <input 
-      id="quantity" 
-      name="quantity" 
-      min="1" 
-      max="20" 
-      value="1" 
-      required
-    >
-  </div>
 
-  <fieldset>
-    <legend><font style= "color: red;">⛟ Delivery Method</font></legend>
-    
-    <div>
-      <input type="radio" id="standard" name="delivery_method" value="standard" checked>
-      <label for="standard">Standard Delivery</label>
+  <main>
+    <div class="product-layout">
+      <div class="product-image">
+        <img src="../pearl.png" alt="An image of the Pearl Walmart Exclusive Art Blu-Ray">
+      </div>
+
+      <div class="product-info">
+        <table class="product-details">
+          <tr>
+            <th>Product</th>
+            <td>Pearl (Walmart Exclusive Art Blu-Ray)</td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td>₱970</td>
+          </tr>
+          <tr>
+            <th>In Stock</th>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th>Genre</th>
+            <td>Horror/Drama</td>
+          </tr>
+          <tr>
+            <th>Plot</th>
+            <td>Trapped on her family's isolated farm, a young woman's desperate desire for stardom turns into a violent, technicolor nightmare.</td>
+          </tr>
+          <tr>
+            <th>Inclusions</th>
+            <td>1080p Blu-ray CD</td>
+          </tr>
+        </table>
+
+        <form action="#" method="post" class="purchase-form">
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+          </div>
+
+          <fieldset>
+            <legend class="accent-legend">⛟ Delivery Method</legend>
+            
+            <div class="form-option">
+              <input type="radio" id="standard" name="delivery_method" value="standard" checked>
+              <label for="standard">Standard Delivery</label>
+            </div>
+
+            <div class="form-option">
+              <input type="radio" id="express" name="delivery_method" value="express">
+              <label for="express">Express Delivery -- ₱500</label>
+            </div>
+
+            <div class="form-option">
+              <input type="radio" id="pickup" name="delivery_method" value="pickup">
+              <label for="pickup">Store Pickup</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="accent-legend">📽 Optional Extras</legend>
+
+            <div class="form-option">
+              <input type="checkbox" id="gift-wrap" name="extras" value="gift_wrapping">
+              <label for="gift-wrap">Gift Wrapping -- ₱150 / Per Item</label>
+            </div>
+
+            <div class="form-option">
+              <input type="checkbox" id="express-handling" name="extras" value="express_handling">
+              <label for="express-handling">Express Handling -- ₱200</label>
+            </div>
+
+            <div class="form-option">
+              <input type="checkbox" id="mini-poster" name="extras" value="mini_poster">
+              <label for="mini-poster">Collector's Mini Poster -- ₱500</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="miagoth@example.com" required>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+      </div>
     </div>
+  </main>
 
-    <div>
-      <input type="radio" id="express" name="delivery_method" value="express">
-      <label for="express">Express Delivery -- P500</label>
-    </div>
-
-    <div>
-      <input type="radio" id="pickup" name="delivery_method" value="pickup">
-      <label for="pickup">Store Pickup</label>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <legend><font style= "color: red;">📽 Optional Extras</font></legend>
-
-    <div>
-      <input type="checkbox" id="gift-wrap" name="extras" value="gift_wrapping">
-      <label for="gift-wrap">Gift Wrapping -- P150 / Per Item</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="express-handling" name="extras" value="express_handling">
-      <label for="express-handling">Express Handling -- P200
-      </label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="mini poster" name="extras" value="mini_poster">
-      <label for="mini poster">Collector's Mini Poster -- P500</label>
-    </div>
-  </fieldset>
-
-  <div>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-
-  <button type="submit">Submit</button>
-</form>
-<hr>
-<footer>
+  <footer>
     <p>&copy; 2026 Johns Movie Nook. All rights reserved.</p>
-</footer>
-
+  </footer>
 </body>
 </html>
