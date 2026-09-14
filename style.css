@@ -6,35 +6,35 @@
   --border-color: #e2e8f0;
 }
 
-
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "courier new", courier, monospace;
   line-height: 1.6;
   color: var(--dark-ink);
-  background-color: #f8f9fa;);
+  background-color: var(--light-bg);
   margin: 0;
   padding: 0;
 }
-
 
 header {
   background-color: #ffffff;
   padding: 24px 32px;
   border-bottom: 1px solid var(--border-color);
-  text-align: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  margin: 0 0 8px 0;
+  margin: 0;
   font-size: 1.8rem;
 }
 
 header p {
-  margin: 0 0 16px 0;
+  margin: 0;
   color: var(--muted-grey);
 }
 
@@ -51,16 +51,12 @@ footer {
   font-size: 0.9rem;
 }
 
-
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 10px;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
@@ -73,13 +69,22 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
 hr {
   border: none;
   border-top: 1px solid var(--border-color);
   margin: 24px 0;
 }
 
+.centered-callout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: var(--light-bg);
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+  margin: 24px 0;
+}
 
 .movie-item h3 {
   margin: 0 0 6px 0;
@@ -95,7 +100,6 @@ hr {
 .movie-item a:hover {
   text-decoration: underline;
 }
-
 
 .product-layout {
   display: flex;
@@ -117,7 +121,6 @@ hr {
   min-width: 300px;
 }
 
-
 .product-details {
   width: 100%;
   border-collapse: collapse;
@@ -137,7 +140,6 @@ hr {
   font-weight: 600;
   color: var(--text-main, #2b2d42);
 }
-
 
 .purchase-form {
   display: flex;
@@ -179,7 +181,6 @@ fieldset {
   margin-bottom: 0;
 }
 
-
 .submit-btn {
   background-color: var(--brand-color, #4a7c59);
   color: #ffffff;
@@ -194,4 +195,3 @@ fieldset {
 .submit-btn:hover {
   opacity: 0.9;
 }
-
