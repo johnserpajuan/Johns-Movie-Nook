@@ -256,3 +256,62 @@ fieldset {
 .submit-btn:hover {
   opacity: 0.9;
 }
+
+.featured-genre {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.genre-image img {
+  width: 140px;          
+  height: auto;           
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.genre-info {
+  flex: 1;
+}
+
+.genre-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.genre-info p {
+  margin: 0 0 12px 0;
+  color: var(--muted-grey);
+  font-size: 0.95rem;
+}
+
+.browse-btn {
+  display: inline-block;
+  color: var(--brand-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.browse-btn:hover {
+  text-decoration: underline;
+}
+
+.featured-genre {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-top: 16px;
+  width: 100%;
+}
