@@ -315,3 +315,20 @@ fieldset {
   margin-top: 16px;
   width: 100%;
 }
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 32px 0 16px 0;
+}
+
+.section-divider h2 {
+  margin: 0;
+  white-space: nowrap; /* Keeps the heading text on a single line */
+}
+
+.section-divider .line {
+  flex: 1; /* Automatically stretches the line across the remaining empty space */
+  height: 1px;
+  background-color: var(--border-color);
+}
