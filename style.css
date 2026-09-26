@@ -19,13 +19,48 @@ body {
   padding: 0;
 }
 
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "masthead masthead"
+    "side     main"
+    "foot     foot";
+  gap: 16px;
+  min-height: 100vh;
+}
+
 header {
+  grid-area: masthead;
   background-color: #ffffff;
   padding: 24px 32px;
   border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+aside {
+  grid-area: side;
+  background-color: #ffffff;
+  padding: 20px;
+  border-right: 1px solid var(--border-color);
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+footer {
+  grid-area: foot;
+  text-align: center;
+  padding: 24px;
+  color: var(--muted-grey);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  background-color: #ffffff;
 }
 
 header h1 {
@@ -36,19 +71,6 @@ header h1 {
 header p {
   margin: 0;
   color: var(--muted-grey);
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 32px 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 24px;
-  color: var(--muted-grey);
-  font-size: 0.9rem;
 }
 
 nav ul {
@@ -67,6 +89,31 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+aside h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--brand-color);
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+aside li {
+  margin-bottom: 8px;
+}
+
+aside a {
+  color: var(--dark-ink);
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: var(--brand-color);
 }
 
 hr {

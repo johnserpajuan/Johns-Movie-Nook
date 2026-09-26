@@ -2,57 +2,80 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
-   <title>Contact</title>
+  <title>Contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="page">
+
 <header>
-    <h1>Contact me:</h1>
-    <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About the Owner</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+  <h1>Contact me:</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About the Owner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
-</header>  
-<hr>
+</header>
+
+<aside>
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="index.html">4K Ultra HD</a></li>
+    <li><a href="index.html">Blu-Ray Editions</a></li>
+    <li><a href="index.html">Collector's Sets</a></li>
+  </ul>
+  <h3>Store Info</h3>
+  <p>Free shipping on orders over $50!</p>
+</aside>
+
 <main>
-<p><font color="red">GMAIL:</font><Strong> johnpaul.serpajuan@tup.edu.ph</Strong></p>
-<p><font color="blue">FACEBOOK:</font><Strong> John Paul Serpa Juan <a href="https://www.facebook.com/iixjhn" target="_blank">Visit Profile</a></Strong></p>
-<p><font color="pink">INSTAGRAM:</font><Strong> @jjohn_333 <a href="https://www.instagram.com/jjohn_333/" target="_blank">Visit Profile</a></Strong></p>
-<p><font color="green">PHONE:</font><Strong> +63 967 098 9505</Strong></p>
-<P>---------->⩊<.ᐟ----------ᶻ 𝗓 𐰁 .ᐟ</P>
+  <p><font color="red">GMAIL:</font><strong> johnpaul.serpajuan@tup.edu.ph</strong></p>
+  <p><font color="blue">FACEBOOK:</font><strong> John Paul Serpa Juan <a href="https://www.facebook.com/iixjhn" target="_blank">Visit Profile</a></strong></p>
+  <p><font color="pink">INSTAGRAM:</font><strong> @jjohn_333 <a href="https://www.instagram.com/jjohn_333/" target="_blank">Visit Profile</a></strong></p>
+  <p><font color="green">PHONE:</font><strong> +63 967 098 9505</strong></p>
+  <p>----------&gt;⩊&lt;.ᐟ----------ᶻ 𝗓 𐰁 .ᐟ</p>
+
+  <hr>
+
+  <form class="purchase-form">
+    <fieldset>
+      <legend class="accent-legend">Your details</legend>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Options">Subject</label>
+        <select id="Options" name="Options" required>
+          <option value="">Select a subject</option>
+          <option value="Movie Inquiry">Movie Inquiry</option>
+          <option value="Order & Shipping Status">Order & Shipping Status</option>
+          <option value="Bulk Orders">Bulk Order Inquiry</option>
+          <option value="General Assistance">Assistance</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit</button>
+    </fieldset>
+  </form>
 </main>
-<hr>
-<form>
-<fieldset>
-  <legend>Your details</legend>
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" required>
-  <br><br>
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
-  <br><br>
-  <label for="Subject">Subject</label>
-  <select id="Options" name="Options" required>
-    <option value="">Select a subject</option>
-    <option value="Movie Inquiry">Movie Inquiry</option>
-    <option value="Order & Shipping Status">Order & Shipping Status</option>
-    <option value="Bulk Orders">Bulk Order Inquiry</option>
-    <option value="General Assistance">Assistance</option>
-  </select>
-  <br><br>    
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="6" required></textarea>
-  <br><br>
-  <button type="submit" value="Submit">Submit</button>
-</fieldset>
-</form>
 
 <footer>
-    <p>&copy; 2026 Johns Movie Nook. All rights reserved.</p>
+  <p>&copy; 2026 Johns Movie Nook. All rights reserved.</p>
 </footer>
+
 </body> 
 </html>
